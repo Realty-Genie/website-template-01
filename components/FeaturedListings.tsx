@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
 
 const listings = [
     {
@@ -137,6 +138,13 @@ export default function FeaturedListings() {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* Show New Listing Button */}
+                <div className="flex justify-center mt-12">
+                    <Button className="border border-primary/50 text-white bg-primary/10 backdrop-blur-sm hover:bg-primary hover:text-black hover:border-primary rounded-xl px-8 py-6 tracking-widest text-xs uppercase font-medium transition-all duration-300">
+                        Show New Listing
+                    </Button>
                 </div>
             </div>
         </section>

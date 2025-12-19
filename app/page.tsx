@@ -7,6 +7,10 @@ import FeaturedAreas from "@/components/FeaturedAreas";
 import ServicesSection from "@/components/ServicesSection";
 import VideoTestimonials from "@/components/VideoTestimonials";
 import Testimonials from "@/components/testimonials";
+import Link from "next/link";
+import FAQ from "@/components/FAQ";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -19,9 +23,10 @@ export default function Home() {
       <FeaturedListings />
       <FeaturedAreas />
       <VideoTestimonials />
+      <FAQ />
       <Testimonials />
-      {/* Future sections (About, Listings, etc.) would go here */}
-      <div className="h-20 bg-background" />
+      <ContactSection />
+      <Footer />
     </main>
   );
 }
